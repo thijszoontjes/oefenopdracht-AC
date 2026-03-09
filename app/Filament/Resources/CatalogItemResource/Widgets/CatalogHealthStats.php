@@ -12,7 +12,7 @@ class CatalogHealthStats extends BaseWidget
     {
         $totaal         = CatalogItem::count();
         $metProblemen   = CatalogItem::where('issue_count', '>', 0)->count();
-        $kritiek        = CatalogItem::whereJsonContains('issues', ['severity' => 'high'])->count();
+        $kritiek        = CatalogItem::where('issues', 'like', '%"severity":"high"%')->count();
         $gemiddeldeScore = $totaal > 0
             ? (int) CatalogItem::avg('readiness_score')
             : 0;
