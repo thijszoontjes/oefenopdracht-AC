@@ -6,7 +6,7 @@ Een Catalog Health Dashboard in Laravel + Filament waarmee je een productfeed ku
 
 **Onderdelen:**
 - `catalog:import` artisan-commando: laadt de JSON-fixture in, mapt naar interne structuur en berekent kwaliteitsscore
-- 9 issue-regels (8 uit de opdracht + 1 eigen): elk als losse klasse in `app/Catalog/Analysis/Rules/`
+- 10 issue-regels (8 uit de opdracht + 2 eigen): elk als losse klasse in `app/Catalog/Analysis/Rules/`
 - Filament-resource met statistieken-widget, gefilterde tabel en product-detailpagina
 - `readiness_score` (0–100) per product als KPI voor beslissers
 
@@ -57,6 +57,7 @@ Copilot stelde voor om de issue-analyse direct in de Filament-resource te doen v
 
 **Eigen keuzes:**
 - De `readiness_score`-berekening en het `LowReviewCountRule` zijn volledig van mij
+- `SpamTitleRule`: detecteert titels met spam-woorden ("cheap", "best", "free", etc.) of >50% hoofdletters — komt vaak voor in slechte feeds en is slecht voor SEO
 - De keuze voor `raw_payload` als JSON-kolom (AI stelde een volledig model voor)
 - De `standaard()`-factory op de Analyzer (AI had dit verspreid over de seeder)
 

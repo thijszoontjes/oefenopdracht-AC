@@ -14,7 +14,7 @@ class SpamTitleRule implements IssueRule
     {
         $titel = $item->title ?? '';
 
-        // Te veel hoofdletters: meer dan 50% van de letters is uppercase
+        // Te veel hoofdletters meer dan 50% van de letters is uppercase
         $letters = preg_replace('/[^a-zA-Z]/', '', $titel);
         if (strlen($letters) > 4 && (strlen(preg_replace('/[^A-Z]/', '', $letters)) / strlen($letters)) > 0.5) {
             return [

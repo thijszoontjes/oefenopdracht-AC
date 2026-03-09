@@ -10,6 +10,7 @@ use App\Catalog\Analysis\Rules\MissingBrandOrCurrencyRule;
 use App\Catalog\Analysis\Rules\MissingCategoryRule;
 use App\Catalog\Analysis\Rules\MissingImageRule;
 use App\Catalog\Analysis\Rules\NegativeStockRule;
+use App\Catalog\Analysis\Rules\SpamTitleRule;
 use App\Catalog\Analysis\Rules\TitleLengthRule;
 use App\Catalog\Analysis\Rules\WeakDescriptionRule;
 use App\Models\CatalogItem;
@@ -68,6 +69,7 @@ class CatalogHealthAnalyzer
             new NegativeStockRule(),
             new MissingCategoryRule(),
             new TitleLengthRule(),
+            new SpamTitleRule(),
             new MissingBrandOrCurrencyRule(),
             new LowReviewCountRule(),
         ]);
