@@ -11,7 +11,6 @@ class MissingImageRule implements IssueRule
     {
         $heeftThumbnail = !empty($item->thumbnail_url);
 
-        // Kijk ook in de ruwe payload of er een bruikbare main image is
         $images = $item->raw_payload['images'] ?? [];
         $heeftMainImage = collect($images)
             ->filter(fn($img) => !empty($img['url']) && ($img['type'] ?? '') === 'main')

@@ -6,11 +6,7 @@ use Illuminate\Support\Facades\Http;
 
 class CatalogFeedClient
 {
-    /**
-     * Laadt de productfeed.
-     * Lokale fixture heeft prioriteit (geen netwerkafhankelijkheid bij demo).
-     * Fallback: DummyJSON API.
-     */
+    // Fixture heeft prioriteit; DummyJSON als fallback
     public function laad(): array
     {
         $fixturePad = database_path('fixtures/catalog-health-feed-curated-final.json');

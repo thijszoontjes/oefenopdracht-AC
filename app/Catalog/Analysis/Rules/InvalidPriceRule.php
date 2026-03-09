@@ -9,7 +9,6 @@ class InvalidPriceRule implements IssueRule
 {
     public function check(CatalogItem $item, array $allItems = []): ?array
     {
-        // Kortingsprijs mag nooit hoger zijn dan de normale prijs
         if ($item->sale_price !== null && $item->sale_price > $item->price) {
             return [
                 'rule'     => 'invalid_price',
@@ -18,7 +17,7 @@ class InvalidPriceRule implements IssueRule
             ];
         }
 
-        // Prijs van 0 is ook verdacht
+        // Prijs van 0 of negatief is ook ongeldig
         if ($item->price <= 0) {
             return [
                 'rule'     => 'invalid_price',

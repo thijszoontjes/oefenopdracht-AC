@@ -24,12 +24,6 @@ class CatalogHealthAnalyzer
         $this->rules = $rules;
     }
 
-    /**
-     * Voert alle regels uit op één item.
-     * Sla de issues, het aantal en de score direct op het model op.
-     *
-     * @param  CatalogItem[]  $allItems  Hele batch (voor cross-item checks zoals duplicate SKU)
-     */
     public function analyze(CatalogItem $item, array $allItems = []): void
     {
         $issues = [];
@@ -47,10 +41,7 @@ class CatalogHealthAnalyzer
         $item->readiness_score = $this->berekenScore($issues);
     }
 
-    /**
-     * Scoremethode: begin op 100, trek punten af per ernst.
-     * Hoog: -20 | Midden: -10 | Laag: -5 | Minimum score: 0
-     */
+    // Score: begin op 100, trek af per ernst (hoog −20, midden −10, laag −5)
     private function berekenScore(array $issues): int
     {
         $score = 100;
@@ -67,10 +58,6 @@ class CatalogHealthAnalyzer
         return max(0, $score);
     }
 
-    /**
-     * Geeft een analyzer-instantie terug met alle standaard regels.
-     * Dit is de enige plek waar regels worden geregistreerd.
-     */
     public static function standaard(): self
     {
         return new self([

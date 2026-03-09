@@ -13,17 +13,11 @@ class CatalogImporter
         private readonly CatalogHealthAnalyzer $analyzer,
     ) {}
 
-    /**
-     * Haalt de feed op, mapt naar CatalogItem, analyseert en slaat op.
-     * Bestaande items worden bijgewerkt (op basis van external_id).
-     *
-     * @return int  Aantal verwerkte items
-     */
+    // Haal feed op, analyseer en sla op — bestaande items worden bijgewerkt op external_id
     public function importeer(): int
     {
         $producten = $this->client->laad();
 
-        // Eerst alles mappen zodat de duplicate-SKU-regel de volledige batch ziet
         $items = array_map(fn($product) => $this->mapNaarItem($product), $producten);
 
         foreach ($items as $item) {
@@ -34,13 +28,8 @@ class CatalogImporter
         return count($items);
     }
 
-    /**
-     * Vertaalt één rij uit de bronfeed naar een CatalogItem.
-     * Onbekende velden worden bewaard in raw_payload.
-     */
     private function mapNaarItem(array $product): CatalogItem
     {
-        // Ondersteuning voor zowel fixture-formaat als DummyJSON-formaat
         $externalId = (string) ($product['external_id'] ?? $product['id'] ?? '');
 
         $item = CatalogItem::firstOrNew(['external_id' => $externalId]);

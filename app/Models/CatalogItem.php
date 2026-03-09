@@ -43,13 +43,11 @@ class CatalogItem extends Model
         'updated_at_source' => 'datetime',
     ];
 
-    // Heeft dit product directe aandacht nodig?
     public function needsAttention(): bool
     {
         return $this->issue_count > 0;
     }
 
-    // Bevat het een ernstig (high) probleem?
     public function heeftErnstigProbleem(): bool
     {
         if (empty($this->issues)) {
@@ -59,13 +57,12 @@ class CatalogItem extends Model
         return collect($this->issues)->contains('severity', 'high');
     }
 
-    // Scope: alleen producten met problemen
+    // Scopes zodat Filament-filters kort blijven
     public function scopeMetProblemen(Builder $query): Builder
     {
         return $query->where('issue_count', '>', 0);
     }
 
-    // Scope: alleen producten zonder problemen — klaar voor gebruik
     public function scopeKlaarVoorGebruik(Builder $query): Builder
     {
         return $query->where('issue_count', 0);

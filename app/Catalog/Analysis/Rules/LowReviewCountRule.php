@@ -5,11 +5,7 @@ namespace App\Catalog\Analysis\Rules;
 use App\Catalog\Analysis\Contracts\IssueRule;
 use App\Models\CatalogItem;
 
-/**
- * Eigen regel: producten met te weinig reviews zijn minder betrouwbaar.
- * Dit is relevant voor AI-verrijking (lage datakwaliteit) en conversie.
- * Weinig reviews betekent ook dat de rating statistisch onbetrouwbaar is.
- */
+// Eigen regel: te weinig reviews maakt de rating onbetrouwbaar
 class LowReviewCountRule implements IssueRule
 {
     private int $minimum = 5;

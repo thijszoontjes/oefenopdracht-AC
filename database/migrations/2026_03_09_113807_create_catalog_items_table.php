@@ -11,7 +11,6 @@ return new class extends Migration
         Schema::create('catalog_items', function (Blueprint $table) {
             $table->id();
 
-            // Kernvelden vanuit de bronfeed
             $table->string('external_id')->index();
             $table->string('sku')->index();
             $table->string('title');
@@ -28,13 +27,11 @@ return new class extends Migration
             $table->decimal('rating', 3, 1)->nullable();
             $table->unsignedInteger('review_count')->default(0);
 
-            // Volledige brondata bewaren zodat we niets kwijtraken
+            // raw_payload bewaart de volledige brondata; issues en score worden door de analyzer gezet
             $table->json('raw_payload');
-
-            // Analyseresultaten
             $table->json('issues')->nullable();
             $table->unsignedTinyInteger('issue_count')->default(0);
-            $table->unsignedTinyInteger('readiness_score')->default(100); // 0–100
+            $table->unsignedTinyInteger('readiness_score')->default(100);
 
             $table->timestamp('updated_at_source')->nullable();
             $table->timestamps();
