@@ -5,6 +5,7 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\CatalogItemResource\Pages;
 use App\Filament\Resources\CatalogItemResource\Widgets\CatalogHealthStats;
 use App\Models\CatalogItem;
+use Filament\Actions\ViewAction;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Tables;
@@ -91,7 +92,7 @@ class CatalogItemResource extends Resource
                     ]),
             ])
             ->actions([
-                Tables\Actions\ViewAction::make(),
+                ViewAction::make(),
             ]);
     }
 
