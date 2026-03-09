@@ -1,0 +1,637 @@
+{
+  "supplier": "Northwind Supplier API",
+  "feed_name": "catalog-health-curated-fixture",
+  "generated_at": "2026-03-07T10:00:00Z",
+  "currency_default": "EUR",
+  "products": [
+    {
+      "external_id": "NW-1001",
+      "sku": "CHAIR-OAK-001",
+      "title": "Oak Lounge Chair",
+      "description": "Solid oak lounge chair with woven seat and matte finish. Designed for daily use in living spaces and boutique hospitality settings.",
+      "category": "Living Room > Chairs",
+      "brand": "Northwind Home",
+      "price": 249.95,
+      "sale_price": 199.95,
+      "currency": "EUR",
+      "stock": 12,
+      "availability": "in_stock",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/oak-chair-main/900/700",
+          "type": "main",
+          "position": 1
+        },
+        {
+          "url": "https://picsum.photos/seed/oak-chair-side/900/700",
+          "type": "gallery",
+          "position": 2
+        }
+      ],
+      "thumbnail_url": "https://picsum.photos/seed/oak-chair-thumb/400/300",
+      "tags": [
+        "oak",
+        "chair",
+        "living-room"
+      ],
+      "rating": 4.4,
+      "review_count": 83,
+      "attributes": {
+        "color": "Natural",
+        "material": "Oak",
+        "assembly": "Required"
+      },
+      "dimensions": {
+        "width_cm": 72,
+        "height_cm": 76,
+        "depth_cm": 68
+      },
+      "source_url": "https://supplier.example.com/products/NW-1001",
+      "updated_at": "2026-02-25T09:12:00Z"
+    },
+    {
+      "external_id": "NW-1002",
+      "sku": "CHAIR-OAK-001",
+      "title": "Oak Chair Studio Edition",
+      "description": "",
+      "category": "Living Room > Chairs",
+      "brand": "Northwind Home",
+      "price": 229.95,
+      "sale_price": 239.95,
+      "currency": "EUR",
+      "stock": 6,
+      "availability": "in_stock",
+      "images": [],
+      "thumbnail_url": null,
+      "tags": [
+        "oak",
+        "chair"
+      ],
+      "rating": 4.0,
+      "review_count": 11,
+      "attributes": {
+        "color": "Natural",
+        "material": "Oak"
+      },
+      "dimensions": {
+        "width_cm": 68,
+        "height_cm": 78,
+        "depth_cm": 64
+      },
+      "source_url": "https://supplier.example.com/products/NW-1002",
+      "updated_at": "2026-02-22T11:30:00Z"
+    },
+    {
+      "external_id": "NW-1003",
+      "sku": "SOFA-LIN-002",
+      "title": "Linen 2-Seater Sofa",
+      "description": "Compact two-seater sofa in sand linen with removable covers and foam-filled cushions.",
+      "category": "Living Room > Sofas",
+      "brand": "Northwind Home",
+      "price": 899.0,
+      "sale_price": null,
+      "currency": "EUR",
+      "stock": -2,
+      "availability": "in_stock",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/linen-sofa-main/900/700",
+          "type": "main",
+          "position": 1
+        }
+      ],
+      "thumbnail_url": "https://picsum.photos/seed/linen-sofa-thumb/400/300",
+      "tags": [
+        "sofa",
+        "linen"
+      ],
+      "rating": 4.7,
+      "review_count": 25,
+      "attributes": {
+        "color": "Sand",
+        "material": "Linen"
+      },
+      "dimensions": {
+        "width_cm": 178,
+        "height_cm": 82,
+        "depth_cm": 91
+      },
+      "source_url": "https://supplier.example.com/products/NW-1003",
+      "updated_at": "2026-02-28T08:15:00Z"
+    },
+    {
+      "external_id": "NW-1004",
+      "sku": "LAMP-BRASS-003",
+      "title": "Brass Floor Lamp",
+      "description": "Tall brushed brass floor lamp with fabric shade and warm ambient light.",
+      "category": "",
+      "brand": "Atelier Northwind",
+      "price": 189.5,
+      "sale_price": 149.5,
+      "currency": "EUR",
+      "stock": 9,
+      "availability": "in_stock",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/brass-lamp-main/900/700",
+          "type": "main",
+          "position": 1
+        }
+      ],
+      "thumbnail_url": "https://picsum.photos/seed/brass-lamp-thumb/400/300",
+      "tags": [
+        "lamp",
+        "lighting",
+        "brass"
+      ],
+      "rating": 4.1,
+      "review_count": 31,
+      "attributes": {
+        "color": "Brass",
+        "material": "Steel"
+      },
+      "dimensions": {
+        "width_cm": 42,
+        "height_cm": 163,
+        "depth_cm": 42
+      },
+      "source_url": "https://supplier.example.com/products/NW-1004",
+      "updated_at": "2026-02-18T07:45:00Z"
+    },
+    {
+      "external_id": "NW-1005",
+      "sku": "MUG-CER-004",
+      "title": "Mug",
+      "description": "Mooi.",
+      "category": "Kitchen > Drinkware",
+      "brand": "Northwind Home",
+      "price": 14.95,
+      "sale_price": null,
+      "currency": "EUR",
+      "stock": 48,
+      "availability": "in_stock",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/ceramic-mug-main/900/700",
+          "type": "main",
+          "position": 1
+        }
+      ],
+      "thumbnail_url": "https://picsum.photos/seed/ceramic-mug-thumb/400/300",
+      "tags": [
+        "mug",
+        "ceramic"
+      ],
+      "rating": 3.9,
+      "review_count": 6,
+      "attributes": {
+        "color": "Forest Green",
+        "material": "Ceramic"
+      },
+      "dimensions": {
+        "width_cm": 9,
+        "height_cm": 10,
+        "depth_cm": 9
+      },
+      "source_url": "https://supplier.example.com/products/NW-1005",
+      "updated_at": "2026-02-20T14:40:00Z"
+    },
+    {
+      "external_id": "NW-1006",
+      "sku": "TABLE-DIN-005",
+      "title": "Solid Walnut Extendable Dining Table for Compact Apartments and Flexible Open Plan Family Spaces",
+      "description": "Extendable dining table in solid walnut veneer with concealed leaf system and tapered legs.",
+      "category": "Dining > Tables",
+      "brand": "Atelier Northwind",
+      "price": 1199.0,
+      "sale_price": 1099.0,
+      "currency": "EUR",
+      "stock": 4,
+      "availability": "in_stock",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/walnut-table-main/900/700",
+          "type": "main",
+          "position": 1
+        },
+        {
+          "url": "https://picsum.photos/seed/walnut-table-detail/900/700",
+          "type": "gallery",
+          "position": 2
+        }
+      ],
+      "thumbnail_url": "https://picsum.photos/seed/walnut-table-thumb/400/300",
+      "tags": [
+        "walnut",
+        "table",
+        "dining"
+      ],
+      "rating": 4.8,
+      "review_count": 17,
+      "attributes": {
+        "color": "Walnut",
+        "material": "Walnut veneer"
+      },
+      "dimensions": {
+        "width_cm": 180,
+        "height_cm": 75,
+        "depth_cm": 90
+      },
+      "source_url": "https://supplier.example.com/products/NW-1006",
+      "updated_at": "2026-02-12T10:05:00Z"
+    },
+    {
+      "external_id": "NW-1007",
+      "sku": "RUG-WOOL-006",
+      "title": "Handwoven Wool Rug",
+      "description": "Handwoven wool rug with subtle geometric pattern and dense pile for high traffic areas.",
+      "category": "Living Room > Rugs",
+      "brand": null,
+      "price": 399.0,
+      "sale_price": 349.0,
+      "currency": null,
+      "stock": 7,
+      "availability": "in_stock",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/wool-rug-main/900/700",
+          "type": "main",
+          "position": 1
+        }
+      ],
+      "thumbnail_url": "https://picsum.photos/seed/wool-rug-thumb/400/300",
+      "tags": [
+        "rug",
+        "wool"
+      ],
+      "rating": 4.5,
+      "review_count": 42,
+      "attributes": {
+        "color": "Stone",
+        "material": "Wool"
+      },
+      "dimensions": {
+        "width_cm": 200,
+        "height_cm": 1.5,
+        "depth_cm": 300
+      },
+      "source_url": "https://supplier.example.com/products/NW-1007",
+      "updated_at": "2026-02-15T09:20:00Z"
+    },
+    {
+      "external_id": "NW-1008",
+      "sku": "SHELF-ASH-007",
+      "title": "Ash Wall Shelf",
+      "description": "Floating ash shelf with hidden mounting hardware and oil-treated finish.",
+      "category": "Storage > Shelves",
+      "brand": "Northwind Home",
+      "price": 0,
+      "sale_price": null,
+      "currency": "EUR",
+      "stock": 18,
+      "availability": "in_stock",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/ash-shelf-main/900/700",
+          "type": "main",
+          "position": 1
+        }
+      ],
+      "thumbnail_url": "https://picsum.photos/seed/ash-shelf-thumb/400/300",
+      "tags": [
+        "shelf",
+        "ash"
+      ],
+      "rating": 4.2,
+      "review_count": 14,
+      "attributes": {
+        "color": "Ash",
+        "material": "Ash wood"
+      },
+      "dimensions": {
+        "width_cm": 100,
+        "height_cm": 4,
+        "depth_cm": 24
+      },
+      "source_url": "https://supplier.example.com/products/NW-1008",
+      "updated_at": "2026-02-19T16:55:00Z"
+    },
+    {
+      "external_id": "NW-1009",
+      "sku": "BED-LIN-008",
+      "title": "Upholstered Linen Bed Frame",
+      "description": "Padded bed frame with removable linen cover and low-profile headboard.",
+      "category": "Bedroom > Beds",
+      "brand": "Northwind Home",
+      "price": 849.0,
+      "sale_price": 799.0,
+      "currency": "EUR",
+      "stock": 0,
+      "availability": "in_stock",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/linen-bed-main/900/700",
+          "type": "main",
+          "position": 1
+        }
+      ],
+      "thumbnail_url": "https://picsum.photos/seed/linen-bed-thumb/400/300",
+      "tags": [
+        "bed",
+        "linen",
+        "bedroom"
+      ],
+      "rating": 4.6,
+      "review_count": 54,
+      "attributes": {
+        "color": "Oatmeal",
+        "material": "Linen"
+      },
+      "dimensions": {
+        "width_cm": 170,
+        "height_cm": 110,
+        "depth_cm": 220
+      },
+      "source_url": "https://supplier.example.com/products/NW-1009",
+      "updated_at": "2026-02-16T12:01:00Z"
+    },
+    {
+      "external_id": "NW-1010",
+      "sku": "DESK-OAK-009",
+      "title": "Oak Writing Desk",
+      "description": "Minimal oak writing desk with cable cutout, soft-close drawer and tapered legs.",
+      "category": "Office > Desks",
+      "brand": "Atelier Northwind",
+      "price": 579.0,
+      "sale_price": 549.0,
+      "currency": "EUR",
+      "stock": 5,
+      "availability": "in_stock",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/oak-desk-main/900/700",
+          "type": "main",
+          "position": 1
+        },
+        {
+          "url": "https://picsum.photos/seed/oak-desk-side/900/700",
+          "type": "gallery",
+          "position": 2
+        }
+      ],
+      "thumbnail_url": "https://picsum.photos/seed/oak-desk-thumb/400/300",
+      "tags": [
+        "desk",
+        "oak",
+        "office"
+      ],
+      "rating": 4.9,
+      "review_count": 19,
+      "attributes": {
+        "color": "Natural",
+        "material": "Oak"
+      },
+      "dimensions": {
+        "width_cm": 130,
+        "height_cm": 75,
+        "depth_cm": 60
+      },
+      "source_url": "https://supplier.example.com/products/NW-1010",
+      "updated_at": "2026-02-24T08:05:00Z"
+    },
+    {
+      "external_id": "NW-1010",
+      "sku": "DESK-OAK-010",
+      "title": "Oak Desk Compact",
+      "description": "Compact desk for small workspaces with integrated cable tray and slim drawer.",
+      "category": "Office > Desks",
+      "brand": "Atelier Northwind",
+      "price": 429.0,
+      "sale_price": 399.0,
+      "currency": "EUR",
+      "stock": 13,
+      "availability": "in_stock",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/oak-desk-compact-main/900/700",
+          "type": "main",
+          "position": 1
+        }
+      ],
+      "thumbnail_url": "https://picsum.photos/seed/oak-desk-compact-thumb/400/300",
+      "tags": [
+        "desk",
+        "compact",
+        "office"
+      ],
+      "rating": 4.3,
+      "review_count": 8,
+      "attributes": {
+        "color": "Natural",
+        "material": "Oak"
+      },
+      "dimensions": {
+        "width_cm": 100,
+        "height_cm": 75,
+        "depth_cm": 55
+      },
+      "source_url": "https://supplier.example.com/products/NW-1011",
+      "updated_at": "2026-02-26T09:05:00Z"
+    },
+    {
+      "external_id": "NW-1012",
+      "sku": "SIDEBOARD-011",
+      "title": "Walnut Sideboard",
+      "description": "Low walnut sideboard with three push-to-open doors and adjustable shelves.",
+      "category": "Storage > Sideboards",
+      "brand": "Northwind Home",
+      "price": 1299.0,
+      "sale_price": null,
+      "currency": "EUR",
+      "stock": 2,
+      "availability": "preorder",
+      "images": [
+        {
+          "url": "",
+          "type": "main",
+          "position": 1
+        }
+      ],
+      "thumbnail_url": "",
+      "tags": null,
+      "rating": 4.1,
+      "review_count": 5,
+      "attributes": {
+        "color": "Walnut",
+        "material": "Walnut veneer"
+      },
+      "dimensions": {
+        "width_cm": 180,
+        "height_cm": 74,
+        "depth_cm": 45
+      },
+      "source_url": "https://supplier.example.com/products/NW-1012",
+      "updated_at": "2026-02-10T10:50:00Z"
+    },
+    {
+      "external_id": "NW-1013",
+      "sku": "STOOL-ASH-012",
+      "title": "Ash Counter Stool",
+      "description": "Counter stool with curved plywood seat, ash frame and integrated footrest.",
+      "category": "Dining > Seating",
+      "brand": "Atelier Northwind",
+      "price": 149.0,
+      "sale_price": 119.0,
+      "currency": "EUR",
+      "stock": 15,
+      "availability": "in_stock",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/ash-stool-main/900/700",
+          "type": "main",
+          "position": 1
+        }
+      ],
+      "thumbnail_url": "https://picsum.photos/seed/ash-stool-thumb/400/300",
+      "tags": [
+        "stool",
+        "ash",
+        "dining"
+      ],
+      "rating": 4.0,
+      "review_count": 12,
+      "attributes": {
+        "color": "Black",
+        "material": "Ash"
+      },
+      "dimensions": {
+        "width_cm": 44,
+        "height_cm": 88,
+        "depth_cm": 46
+      },
+      "source_url": null,
+      "updated_at": "2026-02-27T11:11:00Z"
+    },
+    {
+      "external_id": "NW-1014",
+      "sku": "MIRROR-013",
+      "title": "Rounded Wall Mirror",
+      "description": "Rounded wall mirror with powder-coated metal frame and rear mounting bracket.",
+      "category": "Decor > Mirrors",
+      "brand": "Northwind Home",
+      "price": 219.0,
+      "sale_price": 199.0,
+      "currency": "EUR",
+      "stock": 10,
+      "availability": "in_stock",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/round-mirror-main/900/700",
+          "type": "main",
+          "position": 1
+        }
+      ],
+      "thumbnail_url": "https://picsum.photos/seed/round-mirror-thumb/400/300",
+      "tags": [
+        "mirror",
+        "decor"
+      ],
+      "rating": 4.6,
+      "review_count": 28,
+      "attributes": {
+        "color": "Black",
+        "material": "Metal"
+      },
+      "dimensions": {
+        "width_cm": 80,
+        "height_cm": 80,
+        "depth_cm": 3
+      },
+      "source_url": "https://supplier.example.com/products/NW-1014",
+      "updated_at": "2026-02-20T13:13:00Z"
+    },
+    {
+      "external_id": "NW-1015",
+      "sku": "BENCH-OAK-014",
+      "title": "Oak Entry Bench",
+      "description": "Slim entry bench with lower shelf for shoes and bag storage.",
+      "category": "Hallway > Benches",
+      "brand": "Northwind Home",
+      "price": 329.0,
+      "sale_price": 329.0,
+      "currency": "EUR",
+      "stock": 3,
+      "availability": "low_stock",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/oak-bench-main/900/700",
+          "type": "main",
+          "position": 1
+        }
+      ],
+      "thumbnail_url": "https://picsum.photos/seed/oak-bench-thumb/400/300",
+      "tags": [
+        "bench",
+        "hallway",
+        "oak"
+      ],
+      "rating": 4.2,
+      "review_count": 9,
+      "attributes": {
+        "color": "Natural",
+        "material": "Oak"
+      },
+      "dimensions": {
+        "width_cm": 110,
+        "height_cm": 46,
+        "depth_cm": 38
+      },
+      "source_url": "https://supplier.example.com/products/NW-1015",
+      "updated_at": "2026-02-21T09:45:00Z"
+    },
+    {
+      "external_id": "NW-1016",
+      "sku": "CUSHION-015",
+      "title": "Merino Cushion Cover",
+      "description": "Soft merino wool cushion cover with concealed zip and tonal woven texture.",
+      "category": "Decor > Textiles",
+      "brand": "Atelier Northwind",
+      "price": 49.0,
+      "sale_price": 39.0,
+      "currency": "EUR",
+      "stock": 25,
+      "availability": "in_stock",
+      "images": [
+        {
+          "url": "https://picsum.photos/seed/merino-cushion-main/900/700",
+          "type": "main",
+          "position": 1
+        },
+        {
+          "url": "https://picsum.photos/seed/merino-cushion-detail/900/700",
+          "type": "gallery",
+          "position": 2
+        }
+      ],
+      "thumbnail_url": "https://picsum.photos/seed/merino-cushion-thumb/400/300",
+      "tags": [
+        "cushion",
+        "textiles",
+        "merino"
+      ],
+      "rating": 4.7,
+      "review_count": 37,
+      "attributes": {
+        "color": "Charcoal",
+        "material": "Merino wool"
+      },
+      "dimensions": {
+        "width_cm": 50,
+        "height_cm": 50,
+        "depth_cm": 4
+      },
+      "source_url": "https://supplier.example.com/products/NW-1016",
+      "updated_at": "2026-02-23T17:05:00Z"
+    }
+  ]
+}
