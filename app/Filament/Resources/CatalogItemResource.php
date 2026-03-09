@@ -36,9 +36,9 @@ class CatalogItemResource extends Resource
             ->columns([
                 ImageColumn::make('thumbnail_url')
                     ->label('')
-                    ->width(56)
-                    ->height(56)
-                    ->defaultImageUrl('https://placehold.co/56x56?text=?'),
+                    ->width(48)
+                    ->height(48)
+                    ->defaultImageUrl('https://placehold.co/48x48?text=?'),
 
                 TextColumn::make('external_id')
                     ->label('ID')
@@ -49,7 +49,7 @@ class CatalogItemResource extends Resource
                     ->label('Titel')
                     ->sortable()
                     ->searchable()
-                    ->limit(50),
+                    ->wrap(),
 
                 TextColumn::make('sku')
                     ->label('SKU')
@@ -81,7 +81,7 @@ class CatalogItemResource extends Resource
                     ->color(fn(int $state): string => $state > 0 ? 'danger' : 'success'),
 
                 TextColumn::make('availability')
-                    ->label('Beschikbaarheid')
+                    ->label('Status')
                     ->badge(),
             ])
             ->defaultSort('readiness_score', 'asc') // slechtste bovenaan
