@@ -3,6 +3,7 @@
 namespace App\Filament\Resources\CatalogItemResource\Pages;
 
 use App\Filament\Resources\CatalogItemResource;
+use Filament\Infolists\Components\ImageEntry;
 use Filament\Infolists\Components\RepeatableEntry;
 use Filament\Infolists\Components\TextEntry;
 use Filament\Resources\Pages\ViewRecord;
@@ -20,6 +21,13 @@ class ViewCatalogItem extends ViewRecord
             Section::make('Productgegevens')
                 ->columns(2)
                 ->schema([
+                    ImageEntry::make('thumbnail_url')
+                        ->label('Image')
+                        ->width(160)
+                        ->height(160)
+                        ->defaultImageUrl('https://placehold.co/160x160?text=?')
+                        ->columnSpanFull(),
+
                     TextEntry::make('external_id')->label('Extern ID'),
                     TextEntry::make('sku')->label('SKU'),
                     TextEntry::make('title')->label('Titel')->columnSpanFull(),

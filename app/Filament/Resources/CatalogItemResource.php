@@ -10,6 +10,7 @@ use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\SelectFilter;
@@ -33,6 +34,12 @@ class CatalogItemResource extends Resource
     {
         return $table
             ->columns([
+                ImageColumn::make('thumbnail_url')
+                    ->label('')
+                    ->width(56)
+                    ->height(56)
+                    ->defaultImageUrl('https://placehold.co/56x56?text=?'),
+
                 TextColumn::make('external_id')
                     ->label('ID')
                     ->sortable()
