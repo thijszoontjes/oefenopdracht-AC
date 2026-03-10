@@ -45,12 +45,10 @@ Geeft een collega één getal om snel te prioriteren — geen tabel vol groene/r
 
 ## 4. AI-gebruik
 
-**Gebruikte tools:** GitHub Copilot (Chat)
+**Gebruikte tools:** GitHub Copilot (Chat) - Claude Sonnet 4.6
 
 **Een prompt die echt geholpen heeft:**
-> "Ontwerp 3 minimale oplossingsrichtingen voor een Catalog Health Dashboard in Laravel + Filament. Vergelijk op KISS, separation of concerns en uitbreidbaarheid binnen 4 uur. Kies daarna de simpelste route die nog professioneel voelt."
-
-Dit leverde drie varianten op (alles in Filament resource / aparte service-laag / volledig los domeinmodel). Ik koos de middelste: een dunne Filament-laag met logica in `app/Catalog/`.
+In mijn CatalogHealthStats-widget toont de 'Kritieke problemen'-stat altijd 0, terwijl ik weet dat producten met severity: high in de database staan. De query is CatalogItem::where('issues', 'like', '%"severity":"high"%'). Pas dit aan zodat de juiste data getoond wordt
 
 **AI-output die ik heb aangepast of verworpen:**
 Copilot stelde voor om de issue-analyse direct in de Filament-resource te doen via `mutateFormDataBeforeCreate`. Dat heb ik bewust verworpen — businesslogica hoort niet in de UI-laag. In plaats daarvan zit de logica in `CatalogHealthAnalyzer` en de losse `IssueRule`-klassen.
